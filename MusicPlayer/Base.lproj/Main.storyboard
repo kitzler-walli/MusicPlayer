@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bKz-Eg-RX8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -141,7 +141,78 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+            <point key="canvasLocation" x="-84" y="24"/>
+        </scene>
+        <!--Song List Controller-->
+        <scene sceneID="w7k-F8-xpR">
+            <objects>
+                <tableViewController id="bKz-Eg-RX8" customClass="SongListController" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="28" sectionFooterHeight="28" id="m4G-3v-oSh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="65d-I8-8Jb">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Songs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70g-DP-H4b">
+                                    <rect key="frame" x="134" y="17" width="107" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="107" id="Q4K-sM-QqZ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="70g-DP-H4b" firstAttribute="top" secondItem="65d-I8-8Jb" secondAttribute="top" constant="17" id="5rT-g2-ERT"/>
+                                <constraint firstItem="70g-DP-H4b" firstAttribute="centerX" secondItem="65d-I8-8Jb" secondAttribute="centerX" id="egf-ba-XuN"/>
+                                <constraint firstItem="70g-DP-H4b" firstAttribute="bottom" secondItem="65d-I8-8Jb" secondAttribute="bottomMargin" id="lB8-Nd-dtc"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SongCell" rowHeight="82" id="zk9-Ua-BQq" customClass="SongCell" customModule="MusicPlayer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="83" width="375" height="82"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zk9-Ua-BQq" id="PBP-Rz-hnR">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silent Night" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kuh-SZ-QVL">
+                                            <rect key="frame" x="29" y="8" width="316" height="35"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Kuh-SZ-QVL" firstAttribute="top" secondItem="PBP-Rz-hnR" secondAttribute="topMargin" id="BUf-FU-lCE"/>
+                                        <constraint firstItem="Kuh-SZ-QVL" firstAttribute="leading" secondItem="PBP-Rz-hnR" secondAttribute="leadingMargin" constant="21" id="CaS-yb-aPH"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Kuh-SZ-QVL" secondAttribute="bottom" constant="30" id="ZqN-0n-5LI"/>
+                                        <constraint firstItem="Kuh-SZ-QVL" firstAttribute="centerX" secondItem="PBP-Rz-hnR" secondAttribute="centerX" id="cxs-E8-a94"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="songNameLabel" destination="Kuh-SZ-QVL" id="lWm-R7-CKC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bKz-Eg-RX8" id="Rry-G7-k8d"/>
+                            <outlet property="delegate" destination="bKz-Eg-RX8" id="c9R-Rl-FS7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ntX-w0-9WW"/>
+                    <connections>
+                        <outlet property="titelLabel" destination="70g-DP-H4b" id="aDN-LH-7Yu"/>
+                        <outlet property="viewTitle" destination="65d-I8-8Jb" id="bft-Ne-PNR"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bxb-O7-97G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1680.8" y="36.431784107946029"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5924CDF21E1EC6F300E450EE /* SongListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924CDF11E1EC6F300E450EE /* SongListController.swift */; };
 		593393351E15709B00325593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593393341E15709B00325593 /* AppDelegate.swift */; };
 		593393371E15709B00325593 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593393361E15709B00325593 /* ViewController.swift */; };
 		5933933A1E15709B00325593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593393381E15709B00325593 /* Main.storyboard */; };
@@ -17,10 +18,12 @@
 		5933934D1E157F6000325593 /* SilentNight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5933934C1E157F6000325593 /* SilentNight.mp3 */; };
 		5933934F1E15892300325593 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933934E1E15892300325593 /* Songs.swift */; };
 		593393511E15899200325593 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 593393501E15899200325593 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3 */; };
+		59C58DB11E1EC9AD00A2F9DE /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C58DB01E1EC9AD00A2F9DE /* SongCell.swift */; };
 		59CCBE1D1E1ACD61008A1A71 /* GodSaveTheQueen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59CCBE1C1E1ACD61008A1A71 /* GodSaveTheQueen.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5924CDF11E1EC6F300E450EE /* SongListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongListController.swift; sourceTree = "<group>"; };
 		593393311E15709B00325593 /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		593393341E15709B00325593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		593393361E15709B00325593 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 		5933934C1E157F6000325593 /* SilentNight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SilentNight.mp3; sourceTree = "<group>"; };
 		5933934E1E15892300325593 /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
 		593393501E15899200325593 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "-home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3"; sourceTree = "<group>"; };
+		59C58DB01E1EC9AD00A2F9DE /* SongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
 		59CCBE1C1E1ACD61008A1A71 /* GodSaveTheQueen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GodSaveTheQueen.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,12 +74,14 @@
 				593393341E15709B00325593 /* AppDelegate.swift */,
 				593393361E15709B00325593 /* ViewController.swift */,
 				593393381E15709B00325593 /* Main.storyboard */,
+				59C58DB01E1EC9AD00A2F9DE /* SongCell.swift */,
 				5933933E1E15709B00325593 /* Assets.xcassets */,
 				593393401E15709B00325593 /* LaunchScreen.storyboard */,
 				593393431E15709B00325593 /* Info.plist */,
 				5933933B1E15709B00325593 /* MusicPlayer.xcdatamodeld */,
 				593393491E15751B00325593 /* CAGradiantLayerPlusConvience.swift */,
 				5933934E1E15892300325593 /* Songs.swift */,
+				5924CDF11E1EC6F300E450EE /* SongListController.swift */,
 			);
 			path = MusicPlayer;
 			sourceTree = "<group>";
@@ -167,8 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5924CDF21E1EC6F300E450EE /* SongListController.swift in Sources */,
 				5933934F1E15892300325593 /* Songs.swift in Sources */,
 				593393371E15709B00325593 /* ViewController.swift in Sources */,
+				59C58DB11E1EC9AD00A2F9DE /* SongCell.swift in Sources */,
 				5933933D1E15709B00325593 /* MusicPlayer.xcdatamodeld in Sources */,
 				5933934A1E15751B00325593 /* CAGradiantLayerPlusConvience.swift in Sources */,
 				593393351E15709B00325593 /* AppDelegate.swift in Sources */,
