@@ -71,17 +71,13 @@
 		593393331E15709B00325593 /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				593393341E15709B00325593 /* AppDelegate.swift */,
-				593393361E15709B00325593 /* ViewController.swift */,
-				593393381E15709B00325593 /* Main.storyboard */,
-				59C58DB01E1EC9AD00A2F9DE /* SongCell.swift */,
+				59C58DB61E1EDBA000A2F9DE /* Model */,
+				59C58DB41E1EDB7300A2F9DE /* View */,
+				59C58DB51E1EDB8C00A2F9DE /* Controller */,
 				5933933E1E15709B00325593 /* Assets.xcassets */,
 				593393401E15709B00325593 /* LaunchScreen.storyboard */,
 				593393431E15709B00325593 /* Info.plist */,
 				5933933B1E15709B00325593 /* MusicPlayer.xcdatamodeld */,
-				593393491E15751B00325593 /* CAGradiantLayerPlusConvience.swift */,
-				5933934E1E15892300325593 /* Songs.swift */,
-				5924CDF11E1EC6F300E450EE /* SongListController.swift */,
 			);
 			path = MusicPlayer;
 			sourceTree = "<group>";
@@ -95,6 +91,34 @@
 			);
 			name = MusicFiles;
 			path = MusicPlayer;
+			sourceTree = "<group>";
+		};
+		59C58DB41E1EDB7300A2F9DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59C58DB01E1EC9AD00A2F9DE /* SongCell.swift */,
+				593393381E15709B00325593 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		59C58DB51E1EDB8C00A2F9DE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				593393361E15709B00325593 /* ViewController.swift */,
+				5924CDF11E1EC6F300E450EE /* SongListController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		59C58DB61E1EDBA000A2F9DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				593393341E15709B00325593 /* AppDelegate.swift */,
+				5933934E1E15892300325593 /* Songs.swift */,
+				593393491E15751B00325593 /* CAGradiantLayerPlusConvience.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

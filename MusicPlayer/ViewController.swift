@@ -22,12 +22,13 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
 
     @IBOutlet weak var playerButtonOutlet: UIButton!
   
-    @IBOutlet var skipButtonOutlet: UIButton!
-    @IBOutlet var previousButtonOutlet: UIButton!
+    @IBOutlet weak var skipButtonOutlet: UIButton!
+    @IBOutlet weak var previousButtonOutlet: UIButton!
     @IBOutlet weak var songTitle: UILabel!
     @IBOutlet weak var songArtist: UILabel!
     @IBOutlet weak var songLength: UILabel!
     @IBOutlet weak var timeElaspedLabel: UILabel!
+    @IBOutlet weak var swipeGesture: UISwipeGestureRecognizer!
     
     
     // MARK: Properties

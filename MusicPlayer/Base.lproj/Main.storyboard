@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bKz-Eg-RX8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -107,6 +107,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52609481292517002" green="0.55274766156462585" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="YI8-rF-NOd" firstAttribute="top" secondItem="9pO-jJ-dM0" secondAttribute="bottom" constant="65" id="3Gm-0W-pZT"/>
                             <constraint firstItem="MOh-wy-yiM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4q9-v0-ji4"/>
@@ -128,6 +129,9 @@
                             <constraint firstItem="MOh-wy-yiM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="wgc-qA-pNd"/>
                             <constraint firstItem="ZYk-9k-U99" firstAttribute="leading" secondItem="YI8-rF-NOd" secondAttribute="trailing" constant="8" id="yHo-2e-AhT"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="p1i-Rp-z87" appends="YES" id="Cpc-9D-i1W"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="playerButtonOutlet" destination="ndU-BV-bYg" id="ik9-Qp-BXB"/>
@@ -136,12 +140,18 @@
                         <outlet property="songArtist" destination="9pO-jJ-dM0" id="SkO-Wd-ysp"/>
                         <outlet property="songLength" destination="ZYk-9k-U99" id="zL0-u8-NMe"/>
                         <outlet property="songTitle" destination="MOh-wy-yiM" id="wkU-vz-5Ol"/>
+                        <outlet property="swipeGesture" destination="p1i-Rp-z87" id="snc-AG-Lgs"/>
                         <outlet property="timeElaspedLabel" destination="YI8-rF-NOd" id="szu-pG-sGC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="p1i-Rp-z87">
+                    <connections>
+                        <segue destination="bKz-Eg-RX8" kind="show" id="98a-9s-jnY"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-84" y="24"/>
+            <point key="canvasLocation" x="-129" y="23"/>
         </scene>
         <!--Song List Controller-->
         <scene sceneID="w7k-F8-xpR">
@@ -194,8 +204,10 @@
                                         <constraint firstItem="Kuh-SZ-QVL" firstAttribute="centerX" secondItem="PBP-Rz-hnR" secondAttribute="centerX" id="cxs-E8-a94"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <gestureRecognizers/>
                                 <connections>
                                     <outlet property="songNameLabel" destination="Kuh-SZ-QVL" id="lWm-R7-CKC"/>
+                                    <outletCollection property="gestureRecognizers" destination="tJl-q8-Phn" appends="YES" id="DIZ-gK-NRF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -211,8 +223,13 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxb-O7-97G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="tJl-q8-Phn">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="oEh-4r-ard"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1680.8" y="36.431784107946029"/>
+            <point key="canvasLocation" x="721" y="23"/>
         </scene>
     </scenes>
 </document>
