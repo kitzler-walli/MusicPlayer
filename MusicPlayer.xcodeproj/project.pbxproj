@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		593393351E15709B00325593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593393341E15709B00325593 /* AppDelegate.swift */; };
+		593393371E15709B00325593 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593393361E15709B00325593 /* ViewController.swift */; };
+		5933933A1E15709B00325593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593393381E15709B00325593 /* Main.storyboard */; };
+		5933933D1E15709B00325593 /* MusicPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5933933B1E15709B00325593 /* MusicPlayer.xcdatamodeld */; };
+		5933933F1E15709B00325593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5933933E1E15709B00325593 /* Assets.xcassets */; };
+		593393421E15709B00325593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593393401E15709B00325593 /* LaunchScreen.storyboard */; };
+		5933934A1E15751B00325593 /* CAGradiantLayerPlusConvience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593393491E15751B00325593 /* CAGradiantLayerPlusConvience.swift */; };
+		5933934D1E157F6000325593 /* SilentNight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5933934C1E157F6000325593 /* SilentNight.mp3 */; };
+		5933934F1E15892300325593 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933934E1E15892300325593 /* Songs.swift */; };
+		593393511E15899200325593 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 593393501E15899200325593 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3 */; };
+		59CCBE1D1E1ACD61008A1A71 /* GodSaveTheQueen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59CCBE1C1E1ACD61008A1A71 /* GodSaveTheQueen.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		593393311E15709B00325593 /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		593393341E15709B00325593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		593393361E15709B00325593 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		593393391E15709B00325593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5933933C1E15709B00325593 /* MusicPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicPlayer.xcdatamodel; sourceTree = "<group>"; };
+		5933933E1E15709B00325593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		593393411E15709B00325593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		593393431E15709B00325593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		593393491E15751B00325593 /* CAGradiantLayerPlusConvience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAGradiantLayerPlusConvience.swift; sourceTree = "<group>"; };
+		5933934C1E157F6000325593 /* SilentNight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SilentNight.mp3; sourceTree = "<group>"; };
+		5933934E1E15892300325593 /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
+		593393501E15899200325593 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "-home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3"; sourceTree = "<group>"; };
+		59CCBE1C1E1ACD61008A1A71 /* GodSaveTheQueen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GodSaveTheQueen.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5933932E1E15709B00325593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		593393281E15709B00325593 = {
+			isa = PBXGroup;
+			children = (
+				5933934B1E157EDA00325593 /* MusicFiles */,
+				593393331E15709B00325593 /* MusicPlayer */,
+				593393321E15709B00325593 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		593393321E15709B00325593 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				593393311E15709B00325593 /* MusicPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		593393331E15709B00325593 /* MusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				593393341E15709B00325593 /* AppDelegate.swift */,
+				593393361E15709B00325593 /* ViewController.swift */,
+				593393381E15709B00325593 /* Main.storyboard */,
+				5933933E1E15709B00325593 /* Assets.xcassets */,
+				593393401E15709B00325593 /* LaunchScreen.storyboard */,
+				593393431E15709B00325593 /* Info.plist */,
+				5933933B1E15709B00325593 /* MusicPlayer.xcdatamodeld */,
+				593393491E15751B00325593 /* CAGradiantLayerPlusConvience.swift */,
+				5933934E1E15892300325593 /* Songs.swift */,
+			);
+			path = MusicPlayer;
+			sourceTree = "<group>";
+		};
+		5933934B1E157EDA00325593 /* MusicFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5933934C1E157F6000325593 /* SilentNight.mp3 */,
+				593393501E15899200325593 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3 */,
+				59CCBE1C1E1ACD61008A1A71 /* GodSaveTheQueen.mp3 */,
+			);
+			name = MusicFiles;
+			path = MusicPlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		593393301E15709B00325593 /* MusicPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 593393461E15709B00325593 /* Build configuration list for PBXNativeTarget "MusicPlayer" */;
+			buildPhases = (
+				5933932D1E15709B00325593 /* Sources */,
+				5933932E1E15709B00325593 /* Frameworks */,
+				5933932F1E15709B00325593 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicPlayer;
+			productName = MusicPlayer;
+			productReference = 593393311E15709B00325593 /* MusicPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		593393291E15709B00325593 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "geemakunstorey@storeyofgee.com";
+				TargetAttributes = {
+					593393301E15709B00325593 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PG63BAQE58;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5933932C1E15709B00325593 /* Build configuration list for PBXProject "MusicPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 593393281E15709B00325593;
+			productRefGroup = 593393321E15709B00325593 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				593393301E15709B00325593 /* MusicPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5933932F1E15709B00325593 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				593393421E15709B00325593 /* LaunchScreen.storyboard in Resources */,
+				5933933F1E15709B00325593 /* Assets.xcassets in Resources */,
+				593393511E15899200325593 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3 in Resources */,
+				59CCBE1D1E1ACD61008A1A71 /* GodSaveTheQueen.mp3 in Resources */,
+				5933933A1E15709B00325593 /* Main.storyboard in Resources */,
+				5933934D1E157F6000325593 /* SilentNight.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5933932D1E15709B00325593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5933934F1E15892300325593 /* Songs.swift in Sources */,
+				593393371E15709B00325593 /* ViewController.swift in Sources */,
+				5933933D1E15709B00325593 /* MusicPlayer.xcdatamodeld in Sources */,
+				5933934A1E15751B00325593 /* CAGradiantLayerPlusConvience.swift in Sources */,
+				593393351E15709B00325593 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		593393381E15709B00325593 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				593393391E15709B00325593 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		593393401E15709B00325593 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				593393411E15709B00325593 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		593393441E15709B00325593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		593393451E15709B00325593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		593393471E15709B00325593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PG63BAQE58;
+				INFOPLIST_FILE = MusicPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.storeyofgee.MusicPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		593393481E15709B00325593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PG63BAQE58;
+				INFOPLIST_FILE = MusicPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.storeyofgee.MusicPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5933932C1E15709B00325593 /* Build configuration list for PBXProject "MusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				593393441E15709B00325593 /* Debug */,
+				593393451E15709B00325593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		593393461E15709B00325593 /* Build configuration list for PBXNativeTarget "MusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				593393471E15709B00325593 /* Debug */,
+				593393481E15709B00325593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5933933B1E15709B00325593 /* MusicPlayer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5933933C1E15709B00325593 /* MusicPlayer.xcdatamodel */,
+			);
+			currentVersion = 5933933C1E15709B00325593 /* MusicPlayer.xcdatamodel */;
+			path = MusicPlayer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 593393291E15709B00325593 /* Project object */;
+}

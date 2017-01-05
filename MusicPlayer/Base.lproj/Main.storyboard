@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christmas Radio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOh-wy-yiM">
+                                <rect key="frame" x="16" y="140" width="343" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="hzZ-yI-kW7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:42" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYk-9k-U99">
+                                <rect key="frame" x="189" y="286" width="129" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="RCK-bg-v7C"/>
+                                    <constraint firstAttribute="width" constant="129" id="tOP-wx-qwf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Capital" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pO-jJ-dM0">
+                                <rect key="frame" x="16" y="175" width="343" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="6kr-en-tCn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPr-1B-bIl">
+                                <rect key="frame" x="41" y="395" width="100" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QIC-Xi-f82"/>
+                                    <constraint firstAttribute="height" constant="30" id="hTB-qt-y4b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Previous">
+                                    <color key="titleColor" red="0.054901960780000002" green="0.18823529410000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="68P-gK-KUK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YI8-rF-NOd">
+                                <rect key="frame" x="41" y="286" width="140" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="Vwf-YW-Cec"/>
+                                    <constraint firstAttribute="width" constant="140" id="efz-yZ-XBP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndU-BV-bYg">
+                                <rect key="frame" x="123" y="349" width="129" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mcg-zf-D62"/>
+                                    <constraint firstAttribute="width" constant="129" id="zaE-C9-4iT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.054901960784313725" green="0.18823529411764706" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f8C-He-Rnb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gw-EJ-zgc">
+                                <rect key="frame" x="218" y="395" width="100" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="AWy-g7-R1N"/>
+                                    <constraint firstAttribute="height" constant="30" id="oSG-gT-7WU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="0.054901960780000002" green="0.18823529410000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S44-oY-snd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52609481292517002" green="0.55274766156462585" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YI8-rF-NOd" firstAttribute="top" secondItem="9pO-jJ-dM0" secondAttribute="bottom" constant="65" id="3Gm-0W-pZT"/>
+                            <constraint firstItem="MOh-wy-yiM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4q9-v0-ji4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4gw-EJ-zgc" secondAttribute="trailing" constant="41" id="5TN-B2-AiT"/>
+                            <constraint firstItem="YI8-rF-NOd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="7Z3-1k-RWw"/>
+                            <constraint firstItem="4gw-EJ-zgc" firstAttribute="top" secondItem="ndU-BV-bYg" secondAttribute="bottom" constant="16" id="ECH-SE-VQd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZYk-9k-U99" secondAttribute="trailing" constant="41" id="EDC-f3-x6K"/>
+                            <constraint firstItem="9pO-jJ-dM0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MJp-7l-Efd"/>
+                            <constraint firstItem="9pO-jJ-dM0" firstAttribute="top" secondItem="MOh-wy-yiM" secondAttribute="bottom" constant="2" id="MkZ-OW-PBc"/>
+                            <constraint firstItem="ndU-BV-bYg" firstAttribute="top" secondItem="YI8-rF-NOd" secondAttribute="bottom" constant="30" id="PtU-8n-b6k"/>
+                            <constraint firstItem="ndU-BV-bYg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="THN-cb-bfX"/>
+                            <constraint firstItem="9pO-jJ-dM0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ylz-2Y-WhS"/>
+                            <constraint firstItem="9pO-jJ-dM0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dxa-zB-n8O"/>
+                            <constraint firstItem="MOh-wy-yiM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ifa-ov-QtK"/>
+                            <constraint firstItem="qPr-1B-bIl" firstAttribute="top" secondItem="ndU-BV-bYg" secondAttribute="bottom" constant="16" id="l8K-Um-vfU"/>
+                            <constraint firstItem="MOh-wy-yiM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="o1a-Dc-47j"/>
+                            <constraint firstItem="qPr-1B-bIl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="r1g-5M-K40"/>
+                            <constraint firstItem="ZYk-9k-U99" firstAttribute="top" secondItem="9pO-jJ-dM0" secondAttribute="bottom" constant="65" id="sJ7-q2-bvu"/>
+                            <constraint firstItem="MOh-wy-yiM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="wgc-qA-pNd"/>
+                            <constraint firstItem="ZYk-9k-U99" firstAttribute="leading" secondItem="YI8-rF-NOd" secondAttribute="trailing" constant="8" id="yHo-2e-AhT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerButtonOutlet" destination="ndU-BV-bYg" id="ik9-Qp-BXB"/>
+                        <outlet property="songArtist" destination="9pO-jJ-dM0" id="SkO-Wd-ysp"/>
+                        <outlet property="songLength" destination="ZYk-9k-U99" id="zL0-u8-NMe"/>
+                        <outlet property="songTitle" destination="MOh-wy-yiM" id="wkU-vz-5Ol"/>
+                        <outlet property="timeElaspedLabel" destination="YI8-rF-NOd" id="szu-pG-sGC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
