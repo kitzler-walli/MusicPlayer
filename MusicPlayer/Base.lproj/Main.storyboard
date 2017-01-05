@@ -131,6 +131,8 @@
                     </view>
                     <connections>
                         <outlet property="playerButtonOutlet" destination="ndU-BV-bYg" id="ik9-Qp-BXB"/>
+                        <outlet property="previousButtonOutlet" destination="qPr-1B-bIl" id="UwM-4a-S6E"/>
+                        <outlet property="skipButtonOutlet" destination="4gw-EJ-zgc" id="obN-Qi-Cjo"/>
                         <outlet property="songArtist" destination="9pO-jJ-dM0" id="SkO-Wd-ysp"/>
                         <outlet property="songLength" destination="ZYk-9k-U99" id="zL0-u8-NMe"/>
                         <outlet property="songTitle" destination="MOh-wy-yiM" id="wkU-vz-5Ol"/>

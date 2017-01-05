@@ -21,6 +21,9 @@ private var playerViewControllerKVOContext = 0
 class ViewController: UIViewController, AVAudioPlayerDelegate {
 
     @IBOutlet weak var playerButtonOutlet: UIButton!
+  
+    @IBOutlet var skipButtonOutlet: UIButton!
+    @IBOutlet var previousButtonOutlet: UIButton!
     @IBOutlet weak var songTitle: UILabel!
     @IBOutlet weak var songArtist: UILabel!
     @IBOutlet weak var songLength: UILabel!
@@ -93,6 +96,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         backGround.frame = self.view.bounds
         self.view.layer.insertSublayer(backGround, at: 0)
         
+        // Have skip/previous buttons disabled
+        previousButtonOutlet.isEnabled = false
+        skipButtonOutlet.isEnabled = false
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -143,6 +150,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             NotificationCenter.default.addObserver(self,selector:#selector(ViewController.playerDidFinishPlaying), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: song)
             // Play song
             player.play()
+            skipButtonOutlet.isEnabled = true
+            previousButtonOutlet.isEnabled =  true
             // Update the timer
             updateTimeLeft()
         }
@@ -202,6 +211,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         } else {
             player.pause()
             playerButtonOutlet.setTitle("Play", for: .normal)
+            skipButtonOutlet.isEnabled = false
+            previousButtonOutlet.isEnabled = false
         }
     }
     @IBAction func skipButton(_ sender: UIButton) {
