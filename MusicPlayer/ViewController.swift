@@ -36,6 +36,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     var playerItems = [AVPlayerItem]()
     var currentTrack = 0
     
+    let songsList = songs
+    
     var currentTime: Double {
         get {
             return CMTimeGetSeconds(player.currentTime())
@@ -131,17 +133,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     func playTrack() {
-        // Get songs from resource
-        // Will change this in future updates
-        let path = Bundle.main.path(forResource: "-home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell", ofType: "mp3")
-        let path2 = Bundle.main.path(forResource: "SilentNight", ofType: "mp3")
-        let path3 = Bundle.main.path(forResource: "GodSaveTheQueen", ofType: "mp3")
-        let fileURL = URL(fileURLWithPath: path!)
-        let newFile = URL(fileURLWithPath: path2!)
-        let new3File = URL(fileURLWithPath: path3!)
-        
-        // Array of songs
-        playerItems = [AVPlayerItem(url: fileURL), AVPlayerItem(url: newFile), AVPlayerItem(url: new3File)]
+        // Get file path from songsList array and pass into AVPlayerItem Array
+        playerItems = [AVPlayerItem(url: songsList[0].file), AVPlayerItem(url: songsList[1].file), AVPlayerItem(url: songsList[2].file)]
 
         if playerItems.count > 0 {
             player.replaceCurrentItem(with: playerItems[currentTrack])

@@ -12,8 +12,10 @@ class SongListController: UITableViewController {
 
     
     @IBOutlet weak var viewTitle: UIView!
-    
     @IBOutlet weak var titelLabel: UILabel!
+    
+    
+    let songList = songs
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,16 +48,17 @@ class SongListController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return songList.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SongCell", for: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SongCell", for: indexPath) as! SongCell
 
         cell.backgroundColor = UIColor.clear
+        let song = songList[(indexPath as NSIndexPath).row]
+        cell.songNameLabel.text = song.title
         
-
         return cell
     }
  
