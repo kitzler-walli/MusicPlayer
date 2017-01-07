@@ -144,6 +144,13 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             NotificationCenter.default.addObserver(self,selector:#selector(ViewController.playerDidFinishPlaying), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: song)
             // Play song
             player.play()
+            
+            // Get current index of song to set title and change title
+            let songIndex = currentTrack
+            if currentTrack == songIndex {
+               songTitle.text = songsList[songIndex].title
+            }
+            
             skipButtonOutlet.isEnabled = true
             previousButtonOutlet.isEnabled =  true
             // Update the timer
