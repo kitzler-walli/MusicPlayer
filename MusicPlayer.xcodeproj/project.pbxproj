@@ -18,6 +18,9 @@
 		5933934D1E157F6000325593 /* SilentNight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5933934C1E157F6000325593 /* SilentNight.mp3 */; };
 		5933934F1E15892300325593 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933934E1E15892300325593 /* Songs.swift */; };
 		593393511E15899200325593 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 593393501E15899200325593 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3 */; };
+		597826531E229390003CA010 /* o-holy-night.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 597826521E229390003CA010 /* o-holy-night.mp3 */; };
+		597826551E2294D0003CA010 /* we-wish-you-a-merry-christmas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 597826541E2294D0003CA010 /* we-wish-you-a-merry-christmas.mp3 */; };
+		597826571E22976A003CA010 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-11-The-Huron-Carol.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 597826561E22976A003CA010 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-11-The-Huron-Carol.mp3 */; };
 		59C58DB11E1EC9AD00A2F9DE /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C58DB01E1EC9AD00A2F9DE /* SongCell.swift */; };
 		59CCBE1D1E1ACD61008A1A71 /* GodSaveTheQueen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59CCBE1C1E1ACD61008A1A71 /* GodSaveTheQueen.mp3 */; };
 /* End PBXBuildFile section */
@@ -36,6 +39,9 @@
 		5933934C1E157F6000325593 /* SilentNight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SilentNight.mp3; sourceTree = "<group>"; };
 		5933934E1E15892300325593 /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
 		593393501E15899200325593 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "-home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3"; sourceTree = "<group>"; };
+		597826521E229390003CA010 /* o-holy-night.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "o-holy-night.mp3"; sourceTree = "<group>"; };
+		597826541E2294D0003CA010 /* we-wish-you-a-merry-christmas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "we-wish-you-a-merry-christmas.mp3"; sourceTree = "<group>"; };
+		597826561E22976A003CA010 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-11-The-Huron-Carol.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "-home-singing-public_html-singing-bell.com-wp-content-uploads-2014-11-The-Huron-Carol.mp3"; sourceTree = "<group>"; };
 		59C58DB01E1EC9AD00A2F9DE /* SongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
 		59CCBE1C1E1ACD61008A1A71 /* GodSaveTheQueen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GodSaveTheQueen.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,8 +92,11 @@
 			isa = PBXGroup;
 			children = (
 				5933934C1E157F6000325593 /* SilentNight.mp3 */,
+				597826521E229390003CA010 /* o-holy-night.mp3 */,
+				597826561E22976A003CA010 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-11-The-Huron-Carol.mp3 */,
 				593393501E15899200325593 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3 */,
 				59CCBE1C1E1ACD61008A1A71 /* GodSaveTheQueen.mp3 */,
+				597826541E2294D0003CA010 /* we-wish-you-a-merry-christmas.mp3 */,
 			);
 			name = MusicFiles;
 			path = MusicPlayer;
@@ -184,8 +193,11 @@
 				593393421E15709B00325593 /* LaunchScreen.storyboard in Resources */,
 				5933933F1E15709B00325593 /* Assets.xcassets in Resources */,
 				593393511E15899200325593 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-10-Joy-to-the-world-re-mixed-Singing-Bell.mp3 in Resources */,
+				597826531E229390003CA010 /* o-holy-night.mp3 in Resources */,
 				59CCBE1D1E1ACD61008A1A71 /* GodSaveTheQueen.mp3 in Resources */,
+				597826571E22976A003CA010 /* -home-singing-public_html-singing-bell.com-wp-content-uploads-2014-11-The-Huron-Carol.mp3 in Resources */,
 				5933933A1E15709B00325593 /* Main.storyboard in Resources */,
+				597826551E2294D0003CA010 /* we-wish-you-a-merry-christmas.mp3 in Resources */,
 				5933934D1E157F6000325593 /* SilentNight.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

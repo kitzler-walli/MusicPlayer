@@ -129,7 +129,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     func playTrack() {
         // Get file path from songsList array and pass into AVPlayerItem Array
-        playerItems = [AVPlayerItem(url: songsList[0].file), AVPlayerItem(url: songsList[1].file), AVPlayerItem(url: songsList[2].file)]
+        playerItems = [AVPlayerItem(url: songsList[0].file), AVPlayerItem(url: songsList[1].file), AVPlayerItem(url: songsList[2].file), AVPlayerItem(url: songsList[3].file), AVPlayerItem(url: songsList[4].file), AVPlayerItem(url: songsList[5].file)]
 
         if playerItems.count > 0 {
             player.replaceCurrentItem(with: playerItems[currentTrack])
