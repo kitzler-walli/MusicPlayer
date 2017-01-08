@@ -118,7 +118,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     func nextTrack() {
-        if currentTrack > 1 {
+        if currentTrack > 4 {
             currentTrack = 0
         } else {
             currentTrack += 1
