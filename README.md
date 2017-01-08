@@ -11,5 +11,6 @@ iOS MP3 application using AVFoundation and AVPlayer to play traditional songs
 - List of all songs in a different table view controller
 - Ability to select a song from the list to play
 - Design
+- Add remote control actions to lockscreen 
 
 ### This app is a work in progress, if you would like to collaborate let me know 
