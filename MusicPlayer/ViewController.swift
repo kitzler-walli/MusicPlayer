@@ -15,13 +15,11 @@ import AVFoundation
 
 // KVO context used to differentiate KVO callbacks for this class versus other
 // classes in its class hierarchy.
-
 private var playerViewControllerKVOContext = 0
 
 class ViewController: UIViewController, AVAudioPlayerDelegate {
 
     @IBOutlet weak var playerButtonOutlet: UIButton!
-  
     @IBOutlet weak var skipButtonOutlet: UIButton!
     @IBOutlet weak var previousButtonOutlet: UIButton!
     @IBOutlet weak var songTitle: UILabel!
@@ -98,11 +96,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         let backGround = CAGradientLayer().newColor()
         backGround.frame = self.view.bounds
         self.view.layer.insertSublayer(backGround, at: 0)
-        
-        // Have skip/previous buttons disabled
-        previousButtonOutlet.isEnabled = false
-        skipButtonOutlet.isEnabled = false
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -145,11 +138,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             // Play song
             player.play()
             
-            // Get current index of song to set title and change title
-            let songIndex = currentTrack
-            if currentTrack == songIndex {
-               songTitle.text = songsList[songIndex].title
-            }
+            updateSongTitle()
             
             skipButtonOutlet.isEnabled = true
             previousButtonOutlet.isEnabled =  true
@@ -159,9 +148,16 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     func playerDidFinishPlaying() {
-       // print("Song over")
         // Advance to next track
         nextTrack()
+    }
+    
+    func updateSongTitle() {
+        // Get current index of song to set title and change title
+        let songIndex = currentTrack
+        if currentTrack == songIndex {
+            songTitle.text = songsList[songIndex].title
+        }
     }
     
     func updateTimeLeft() {
@@ -212,15 +208,15 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         } else {
             player.pause()
             playerButtonOutlet.setTitle("Play", for: .normal)
-            skipButtonOutlet.isEnabled = false
-            previousButtonOutlet.isEnabled = false
         }
     }
     @IBAction func skipButton(_ sender: UIButton) {
         nextTrack()
+        playerButtonOutlet.setTitle("Pause", for: .normal)
     }
     @IBAction func previousButton(_ sender: UIButton) {
         previousTrack()
+        playerButtonOutlet.setTitle("Pause", for: .normal)
     }
     // MARK: Convenience
     func createTimeString(time: Float) -> String {
