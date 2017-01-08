@@ -92,7 +92,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Continue to loop through playlist when app is in background
         UIApplication.shared.beginReceivingRemoteControlEvents()
         
         let backGround = CAGradientLayer().newColor()
