@@ -93,6 +93,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UIApplication.shared.beginReceivingRemoteControlEvents()
+        
         let backGround = CAGradientLayer().newColor()
         backGround.frame = self.view.bounds
         self.view.layer.insertSublayer(backGround, at: 0)
